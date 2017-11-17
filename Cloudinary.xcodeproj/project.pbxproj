@@ -154,6 +154,20 @@
 			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
 			remoteInfo = "Alamofire tvOS Tests";
 		};
+		BCB889D01FBF2620001579F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB889CC1FBF2620001579F5 /* CLDCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCB889B11FBF25A7001579F5;
+			remoteInfo = CLDCrypto;
+		};
+		BCB889D41FBF2640001579F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB889CC1FBF2620001579F5 /* CLDCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB889B01FBF25A7001579F5;
+			remoteInfo = CLDCrypto;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -162,8 +176,6 @@
 		2936A58D1E1EFF95009B7FAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2944B6671E2FB36F003AB794 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2944B6721E2FB613003AB794 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		29CEE1A11E34A55600A2629D /* GenerateCLDCryptoModule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = GenerateCLDCryptoModule; sourceTree = "<group>"; };
-		29CEE1A21E34A55600A2629D /* GenerateCLDCryptoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCLDCryptoModule.swift; sourceTree = "<group>"; };
 		362CB7711CA2EA9900C26E74 /* CLDNetworkDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLDNetworkDelegate.swift; path = Network/CLDNetworkDelegate.swift; sourceTree = "<group>"; };
 		362CB7761CA41D0F00C26E74 /* CLDBuildParamsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLDBuildParamsUtils.swift; path = Utils/CLDBuildParamsUtils.swift; sourceTree = "<group>"; };
 		362CB77C1CA41E6B00C26E74 /* CLDDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLDDefinitions.swift; path = Features/Helpers/CLDDefinitions.swift; sourceTree = "<group>"; };
@@ -255,6 +267,7 @@
 		36D00E1E1D9D82E800BF4DD5 /* CLDFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLDFace.swift; sourceTree = "<group>"; };
 		36D00E201D9D833000BF4DD5 /* CLDBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLDBoundingBox.swift; sourceTree = "<group>"; };
 		860464FF1DC79EA5007172D7 /* CLDNetworkUploadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLDNetworkUploadRequest.swift; sourceTree = "<group>"; };
+		BCB889CC1FBF2620001579F5 /* CLDCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CLDCrypto.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,15 +300,6 @@
 				2936A50C1E1D92A5009B7FAF /* Cloudinary.podspec */,
 			);
 			name = "Support Files";
-			sourceTree = "<group>";
-		};
-		29CEE1A01E34A55600A2629D /* CLDCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				29CEE1A11E34A55600A2629D /* GenerateCLDCryptoModule */,
-				29CEE1A21E34A55600A2629D /* GenerateCLDCryptoModule.swift */,
-			);
-			path = CLDCrypto;
 			sourceTree = "<group>";
 		};
 		362CB78D1CA7D3E900C26E74 /* GenerateUrlTests */ = {
@@ -471,7 +475,7 @@
 		369FB33C1C79D360003E81B6 = {
 			isa = PBXGroup;
 			children = (
-				29CEE1A01E34A55600A2629D /* CLDCrypto */,
+				BCB889CC1FBF2620001579F5 /* CLDCrypto.xcodeproj */,
 				2936A58B1E1EFF72009B7FAF /* Support Files */,
 				369FB3481C79D360003E81B6 /* Cloudinary */,
 				3696FBF21C8C6A3D00DE9568 /* CloudinaryTests */,
@@ -713,6 +717,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		BCB889CD1FBF2620001579F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCB889D11FBF2620001579F5 /* CLDCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -749,7 +761,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 369FB34E1C79D360003E81B6 /* Build configuration list for PBXNativeTarget "Cloudinary" */;
 			buildPhases = (
-				368604E61CC66DFD00DCEAE5 /* ShellScript */,
 				369FB3411C79D360003E81B6 /* Sources */,
 				369FB3421C79D360003E81B6 /* Frameworks */,
 				369FB3431C79D360003E81B6 /* Headers */,
@@ -758,6 +769,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BCB889D51FBF2640001579F5 /* PBXTargetDependency */,
 			);
 			name = Cloudinary;
 			productName = Cloudinary;
@@ -800,6 +812,10 @@
 				{
 					ProductGroup = 36806F641CC7F4DB009BD86F /* Products */;
 					ProjectRef = 36806F631CC7F4DB009BD86F /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = BCB889CD1FBF2620001579F5 /* Products */;
+					ProjectRef = BCB889CC1FBF2620001579F5 /* CLDCrypto.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -860,6 +876,13 @@
 			remoteRef = 862713EB1DC21CEF00A02D62 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		BCB889D11FBF2620001579F5 /* CLDCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CLDCrypto.framework;
+			remoteRef = BCB889D01FBF2620001579F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -884,22 +907,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		368604E61CC66DFD00DCEAE5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo Generating $PROJECT_DIR/Cloudinary/Frameworks/CLDCrypto/${PLATFORM_NAME}/CLDCrypto.framework\nxcrun -sdk macosx swift ./CLDCrypto/GenerateCLDCryptoModule.swift $PLATFORM_NAME $PROJECT_DIR\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3696FBED1C8C6A3D00DE9568 /* Sources */ = {
@@ -1002,6 +1009,11 @@
 			isa = PBXTargetDependency;
 			target = 369FB3451C79D360003E81B6 /* Cloudinary */;
 			targetProxy = 3696FBF71C8C6A3D00DE9568 /* PBXContainerItemProxy */;
+		};
+		BCB889D51FBF2640001579F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CLDCrypto;
+			targetProxy = BCB889D41FBF2640001579F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

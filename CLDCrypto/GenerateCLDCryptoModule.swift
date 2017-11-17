@@ -12,7 +12,7 @@ NSSetUncaughtExceptionHandler(handler)
 
 // MARK: - Task Utilities
 func runShellCommand(command: String) -> String? {
-    let args: [String] = command.characters.split { $0 == " " }.map(String.init)
+    let args: [String] = command.split { $0 == " " }.map(String.init)
     let other = args[1..<args.count]
     let outputPipe = Pipe()
     let process = Process()
@@ -22,7 +22,7 @@ func runShellCommand(command: String) -> String? {
     process.launch()
     process.waitUntilExit()
 
-    guard process	.terminationStatus == 0 else { return nil }
+    guard process.terminationStatus == 0 else { return nil }
 
     let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
     return String(data:outputData, encoding: .utf8)
@@ -83,7 +83,7 @@ if verbose {
 let moduleDirectory: String
 let moduleFileName: String
 if CommandLine.arguments.count > 2 {
-    moduleDirectory =  "\(CommandLine.arguments[2])/Cloudinary/Frameworks/CLDCrypto/\(sdk)/CLDCrypto.framework"
+    moduleDirectory =  "\(CommandLine.arguments[2])/CLDCrypto/\(sdk)"
     moduleFileName = "module.map"
 }
 else {
