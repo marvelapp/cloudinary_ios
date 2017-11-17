@@ -12,7 +12,6 @@
 		2936A58F1E1EFF95009B7FAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2936A58D1E1EFF95009B7FAF /* README.md */; };
 		2944B6731E2FB613003AB794 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 2944B6721E2FB613003AB794 /* CHANGELOG.md */; };
 		29CEE1A31E34A55600A2629D /* GenerateCLDCryptoModule in Resources */ = {isa = PBXBuildFile; fileRef = 29CEE1A11E34A55600A2629D /* GenerateCLDCryptoModule */; };
-		29CEE1A41E34A55600A2629D /* GenerateCLDCryptoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEE1A21E34A55600A2629D /* GenerateCLDCryptoModule.swift */; };
 		362CB7721CA2EA9900C26E74 /* CLDNetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CB7711CA2EA9900C26E74 /* CLDNetworkDelegate.swift */; };
 		362CB7771CA41D0F00C26E74 /* CLDBuildParamsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CB7761CA41D0F00C26E74 /* CLDBuildParamsUtils.swift */; };
 		362CB77D1CA41E6B00C26E74 /* CLDDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CB77C1CA41E6B00C26E74 /* CLDDefinitions.swift */; };
@@ -955,7 +954,6 @@
 				3696FC561C9162FF00DE9568 /* CLDCryptoUtils.swift in Sources */,
 				36AC051D1D4F9196002FC9DF /* CLDSpriteRequest.swift in Sources */,
 				3653B1971D43B29B0093765C /* CLDImageCache.swift in Sources */,
-				29CEE1A41E34A55600A2629D /* GenerateCLDCryptoModule.swift in Sources */,
 				36747B6D1CB130C200087D10 /* CLDDownloader.swift in Sources */,
 				362CB77D1CA41E6B00C26E74 /* CLDDefinitions.swift in Sources */,
 				3630877B1CBA6C4B00782A57 /* UIView+Cloudinary.swift in Sources */,
