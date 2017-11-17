@@ -74,7 +74,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB889B91FBF25A7001579F5 /* Build configuration list for PBXNativeTarget "CLDCrypto" */;
 			buildPhases = (
-				BCB889DF1FBF264F001579F5 /* ShellScript */,
 				BCB889AC1FBF25A7001579F5 /* Sources */,
 				BCB889AD1FBF25A7001579F5 /* Frameworks */,
 				BCB889AE1FBF25A7001579F5 /* Headers */,
@@ -130,22 +129,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BCB889DF1FBF264F001579F5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo Generating $PROJECT_DIR/Cloudinary/Frameworks/CLDCrypto/${PLATFORM_NAME}/CLDCrypto.framework\nxcrun -sdk macosx swift ./CLDCrypto/GenerateCLDCryptoModule.swift $PLATFORM_NAME $PROJECT_DIR\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCB889AC1FBF25A7001579F5 /* Sources */ = {
